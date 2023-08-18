@@ -57,10 +57,10 @@ class Stack {
         this.stack.push(newElement); // Este push NO es el push de antes, es el metodo de las listas para agregar un nuevo item, pues this.stack es una lista. (No confundir)
         this.top = newElement; // Una vez ingresado el elemento a la lista, se declara al elemento nuevo como el elemento observado
     }
-    peek() { // Devolver el ultimo elemento del stack, como no se permite al usuario elejir no hace falta ningun argumento
+    peek() { // Devolver el ultimo elemento del stack, como no se permite al usuario elegir no hace falta ningun argumento
         return this.top;
     }
-    pop() { // Eliminamos el ultimo elemnento del stack, como no se permite al usuario elejir cual eliminar no hace falta ningun argumento
+    pop() { // Eliminamos el ultimo elemnento del stack, como no se permite al usuario elegir cual eliminar no hace falta ningun argumento
         if (this.top != null){// Solo en caso de que el stack NO este vacio, es decir que vea un elemento diferente del fondo
             return this.stack.pop(); // Eliminamos el ultimo elemento del la lista stack, es decir nuesto stack. Para ello usamos el metodo de las listas pop que nos elimina el ultimo item.
         }
