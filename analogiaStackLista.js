@@ -103,18 +103,17 @@ for (n of numero){ // Por cada caracter del string
     stackInicial.push(n) // Ingresamos el elemento de esta iteracion
     // console.log(stackInicial) // Imprimimos como se ve el stack en cada iteracion
 }
-console.log('Log de stack completado'); // Hacemos una diferenciacion entre console.log's
+console.log('\nLog de stack completo:'); // Hacemos una diferenciacion entre console.log's
 console.log(stackInicial); // Imprimimos como se veria el stack al final de la operacion
-console.log('Log de peek');
+console.log('\nLog de peek:');
 console.log(stackInicial.peek());
-console.log('Log de pop');
+console.log('\nLog de pop:');
 console.log(stackInicial.pop());
-console.log('Log del stack luego de pop');
+console.log('\nLog del stack luego de pop:');
 console.log(stackInicial); // Verificamos si se elimino correctamente el ultimo elemento (6)
+console.log('\nLog del size:');
 console.log(stackInicial.size());
-console.log('Log de el stack');
-stackInicial.log();
-console.log('Log de empty');
+console.log('\nLog de log:');
+console.log(stackInicial.log());
+console.log('\nLog de empty:');
 console.log(stackInicial.isEmpty());
-
-//if (this.top != null){// Solo en caso de que el stack NO este vacio, es decir que vea un elemento diferente del fondo
