@@ -62,7 +62,7 @@ class Stack {
     }
     pop() { // Eliminamos el ultimo elemnento del stack, como no se permite al usuario elegir cual eliminar no hace falta ningun argumento
         if (this.top != null){// Solo en caso de que el stack NO este vacio, es decir que vea un elemento diferente del fondo
-            this.top = this.stack[this.stack.length-2];
+            this.top = this.stack[this.stack.length-2]; // Actualizamos la informacion de cual es el nuevo elemento observado, con this.stack[] accedemos a un elemento de la lista(stack), y con this.stack.length-x le decimos de la longitud total de la lista quiero que le te posiciones -1 es decir en el ultimo elemento, pero ese elemento vamos a borrarlo en la siguiente linea, por lo tanto nos toca movernos una posicion mas -1 -1 = -2 es decir en pseudocodigo seria stack[penultimo]
             return this.stack.pop(); // Eliminamos el ultimo elemento del la lista stack. Para ello usamos el metodo de las listas pop que nos elimina el ultimo item.
         }
     }
