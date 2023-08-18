@@ -95,7 +95,7 @@ class Node {
 // Se pide al alumno crear un stack que al ingresar un numero, el stack contenga cada caracter de dicho numero como nodos en el stack
 
 
-stackInicial = new Stack(); // Creamos un stack basado en la clase Stack que creamos antes
+let stackInicial = new Stack(); // Creamos un stack basado en la clase Stack que creamos antes
 const numero = '123456'; // Simulamos una entrada del usuario con un numero, como las entradas serian string esta declaracion tambien sera string
 
 for (n of numero){ // Por cada caracter del string
