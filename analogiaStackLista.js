@@ -62,14 +62,17 @@ class Stack {
     }
     pop() { // Eliminamos el ultimo elemnento del stack, como no se permite al usuario elegir cual eliminar no hace falta ningun argumento
         if (this.top != null){// Solo en caso de que el stack NO este vacio, es decir que vea un elemento diferente del fondo
-            return this.stack.pop(); // Eliminamos el ultimo elemento del la lista stack, es decir nuesto stack. Para ello usamos el metodo de las listas pop que nos elimina el ultimo item.
+            return this.stack.pop(); // Eliminamos el ultimo elemento del la lista stack. Para ello usamos el metodo de las listas pop que nos elimina el ultimo item.
         }
     }
     size(){
         return this.stack.length; // En este caso la forma mas sencilla es simplemente usar el metodo de length para saber el largo de la lista stack, nuestro Stack y devolverlo al usuario
     }
     log() { // Cambio de vista cenital (desde arriba) a horizontal (verlo de lado)
-        return this.stack // Retornamos el stack en su totalidad al usuario, esta sera la unica forma en la que el usuario podra ver todos los elementos, en analogia seria como si cambiase de vista cenital (desde arriba) a verlo de forma horizontal. Sin embargo mantiene su incapacidad de sacar elementos diferentes al ultimo de la pila.
+        console.log(this.stack) // Retornamos el stack en su totalidad al usuario, esta sera la unica forma en la que el usuario podra ver todos los elementos, en analogia seria como si cambiase de vista cenital (desde arriba) a verlo de forma horizontal. Sin embargo mantiene su incapacidad de sacar elementos diferentes al ultimo de la pila.
+    }
+    log (){
+        console.log(this.stack)
     }
     isEmpty() { // Verificamos si el stack esta vacio
         if ((this.size()) == 0) { // En caso de que este vacio
@@ -108,8 +111,8 @@ console.log(stackInicial.pop());
 console.log('Log del stack luego de pop');
 console.log(stackInicial); // Verificamos si se elimino correctamente el ultimo elemento (6)
 console.log(stackInicial.size());
-console.log('Log de log');
-console.log(stackInicial.log());
+console.log('Log de el stack');
+stackInicial.log();
 console.log('Log de empty');
 console.log(stackInicial.isEmpty());
 
